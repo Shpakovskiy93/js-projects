@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="style.css" />
+	<title>currency converter</title>
+</head>
+<body>
+		
+		<section class="converter">
+			<div class="container">
+					<form class="converter__form">
+						<h1 class="converter__title">currency converter</h1>
+						<div class="converter__items">
+							<div class="converter__item">
+								<div class="converter__item-title">Курс USD</div>
+								<div class="converter__item-value" data-value="USD">--.--</div>
+							</div>
+							<div class="converter__item">
+								<div class="converter__item-title">Курс EUR</div>
+								<div class="converter__item-value" data-value="EUR">--.--</div>
+							</div>
+							<div class="converter__item">
+								<div class="converter__item-title">Курс RUB</div>
+								<div class="converter__item-value" data-value="RUB">--.--</div>
+							</div>
+						</div>
+						<div class="converter__selects">
+							<div class="converter__select">
+								<label for="name">Отдаю:</label>
+								<select disabled>
+									<option value="UA" selected>UA — Гривна</option>
+								</select>
+							</div>
+							<div class="converter__select">
+								<label for="name">Получаю:</label>
+								<select id="select">
+									<option value="USD">USD — Доллар США</option>
+									<option value="EUR">EUR — Евро</option>
+									<option value="RUB">RUB — Російський рубль</option>
+								</select>
+							</div>
+						</div>
+						<div class="converter__inputs">
+							<div class="converter__input">
+								<input class="input" id="input" type="number" autofocus/>
+							</div>
+							<div class="converter__input">
+								<input class="input" id="result" type="number"/>
+							</div>
+						</div>
+					</form>
+			</div>
+		</section>
+
+	<script src="main.js"></script>
+</body>
+</html>
