@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Pomodoro timer</title>
+</head>
+<body>
+    
+    <div class="pomodoro">
+        <div class="container">
+            <h1 class="pomodoro__title">Pomodoro</h1>
+    
+            <div class="pomodoro__timer">
+                <h4 class="timer__minutes" id="minutes">25</h4>
+                <h4>:</h4>
+                <h4 timer__seconds id="seconds">00</h4>
+            </div>
+
+            <input class="pomodoro__input" type="number" >
+            <h4 class="finish__text hiden">time is out</h4>
+    
+            <div class="pomodoro__buttons">
+                <button class="btn__start"><img src="./img/play.png" alt=""></button>
+                <a class="pomodoro__repeat" href="index.html"><img src="./img/repeat.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

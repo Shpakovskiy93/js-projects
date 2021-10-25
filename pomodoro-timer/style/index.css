@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Dancing Script', cursive;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.pomodoro {
+    min-height: 100vh;
+    background-color: #211c42;
+    color: #fff;
+}
+
+.pomodoro__timer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin: 50px auto 0;
+    font-size: 20px;
+}
+
+.pomodoro__input {
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.pomodoro__buttons {
+    max-width: 400px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn__start {
+    border: none;
+    border-radius: 4px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #211c42;
+}
+.pomodoro__repeat {
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #211c42;
+}
+
+.finish__text {
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+.hiden {
+    display: none;
+}
