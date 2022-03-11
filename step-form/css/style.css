@@ -1,0 +1,104 @@
+:root {
+    --primary-color: rgba(11, 78, 179)
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+.width-50 {
+    width: 50%;
+}
+.ml-auto {
+    margin-left: auto;
+}
+
+.progress__bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+}
+.progress__bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+.progress__step {
+    width: 35px;
+    height: 35px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress__step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+
+.form {
+    width: clamp(320px, 30%, 430px);
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: .35rem;
+    padding: 1.5rem;
+}
+.form__step {
+    display: none;
+}
+.form__step-active {
+    display: block;
+}
+.form__title {
+    text-align: center;
+}
+.input__group {
+    margin: 2rem 0;
+}
+.btns__group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.btn {
+    padding: .75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}

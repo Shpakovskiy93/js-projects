@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <title>Form</title>
+</head>
+<body>
+    
+    <form class="form" action="#">
+        <h1 class="form__title">Registration form</h1>
+
+        <div class="progress__bar">
+            <div class="progress__step" data-title="Intro"></div>
+            <div class="progress__step" data-title="Contact"></div>
+            <div class="progress__step" data-title="ID"></div>
+            <div class="progress__step" data-title="Password"></div>
+        </div>
+
+        <div class="form__step form__step-active">
+            <div class="input__group">
+                <label for="username">username</label>
+                <input type="text" name="Username" id="username">
+            </div>
+            <div class="input__group">
+                <label for="position">position</label>
+                <input type="text" name="position" id="position">
+            </div>
+            <div>
+                <a class="btn btn__next width-50 ml-auto" href="#">next</a>
+            </div>
+        </div>
+
+        <div class="form__step">
+            <div class="input__group">
+                <label for="phone">phone</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div class="input__group">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="btns__group">
+                <a class="btn btn__previous" href="#">previous</a>
+                <a class="btn btn__next" href="#">next</a>
+            </div>
+        </div>
+
+        <div class="form__step">
+            <div class="input__group">
+                <label for="dob">date of birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="input__group">
+                <label for="ID">national ID</label>
+                <input type="number" name="ID" id="ID">
+            </div>
+            <div class="btns__group">
+                <a class="btn btn__previous" href="#">previous</a>
+                <a class="btn btn__next" href="#">next</a>
+            </div>
+        </div>
+
+        <div class="form__step">
+            <div class="input__group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="input__group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="number" name="confirmPassword" id="confirmPassword">
+            </div>
+            <div class="btns__group">
+                <a class="btn btn__previous" href="#">previous</a>
+                <input class="btn" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
