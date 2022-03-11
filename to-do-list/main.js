@@ -5,7 +5,7 @@ const todoItemsEl = document.querySelectorAll(".todo__item");
 
 
 function createTodoItem(title) {
-    //======================================CREATE ELEMENTS=================
+    //===================================CREATE ELEMENTS=================
     const checkBox = document.createElement('input');
     checkBox.type = 'checkbox';
     checkBox.className = "input__checkbox";
