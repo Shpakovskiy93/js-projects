@@ -17,7 +17,8 @@
         <h1 class="form__title">Registration form</h1>
 
         <div class="progress__bar">
-            <div class="progress__step" data-title="Intro"></div>
+            <div class="progress" id="progress"></div>
+            <div class="progress__step progress__step-active" data-title="Intro"></div>
             <div class="progress__step" data-title="Contact"></div>
             <div class="progress__step" data-title="ID"></div>
             <div class="progress__step" data-title="Password"></div>
@@ -25,11 +26,11 @@
 
         <div class="form__step form__step-active">
             <div class="input__group">
-                <label for="username">username</label>
+                <label for="username">Username</label>
                 <input type="text" name="Username" id="username">
             </div>
             <div class="input__group">
-                <label for="position">position</label>
+                <label for="position">Country</label>
                 <input type="text" name="position" id="position">
             </div>
             <div>
@@ -39,12 +40,12 @@
 
         <div class="form__step">
             <div class="input__group">
-                <label for="phone">phone</label>
+                <label for="phone">Phone</label>
                 <input type="text" name="phone" id="phone">
             </div>
             <div class="input__group">
-                <label for="email">email</label>
-                <input type="text" name="email" id="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
             </div>
             <div class="btns__group">
                 <a class="btn btn__previous" href="#">previous</a>
@@ -54,12 +55,12 @@
 
         <div class="form__step">
             <div class="input__group">
-                <label for="dob">date of birth</label>
+                <label for="dob">Date of birth</label>
                 <input type="date" name="dob" id="dob">
             </div>
             <div class="input__group">
-                <label for="ID">national ID</label>
-                <input type="number" name="ID" id="ID">
+                <label for="Place">Place of Birth</label>
+                <input type="number" name="Place" id="Place">
             </div>
             <div class="btns__group">
                 <a class="btn btn__previous" href="#">previous</a>
@@ -74,7 +75,7 @@
             </div>
             <div class="input__group">
                 <label for="confirmPassword">Confirm Password</label>
-                <input type="number" name="confirmPassword" id="confirmPassword">
+                <input type="password" name="confirmPassword" id="confirmPassword">
             </div>
             <div class="btns__group">
                 <a class="btn btn__previous" href="#">previous</a>
