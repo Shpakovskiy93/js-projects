@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo List</title>
 </head>
 <body>
-    <main class="app">
-        <header class="header">
-            <h1 class="header__title">To-do list</h1>
-        </header>
 
-        <ul class="todo__list">
-            <li class="todo__item">
-                <input class="input__checkbox" type="checkbox">
-                <label class="title" >learn js</label>
-                <input class="textfield" type="text">
-                <button>change</button>
-                <button>delete</button>
-            </li>
-        </ul>
+    <div class="todo">
+        <div class="container">
+            <header class="todo__header">
+                <h1 class="todo__title">Todo List</h1>
+            </header>
+            <form class="todo__form">
+                <input class="todo__input" type="text">
+                <button class="todo__btn" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
 
-        <form class="todo__form">
-            <input class="add__input" type="text">
-            <button class="add__button">add</button>
-        </form>
-    </main>
+                <div class="select">
+                    <select class="todo__filter" name="todos">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="uncomleted">Uncomleted</option>
+                    </select>
+                </div>
+            </form>
+            <div class="todo__container">
+                <ul class="todo__list"></ul>
+            </div>
+        </div>
+    </div>
 
+    
     <script src="./main.js"></script>
 </body>
 </html>
