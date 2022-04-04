@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.list__title {
+    width: calc(25% - 40px);
+    margin: 0 20px 10px;
+    list-style-type: none;
+    font-weight: bold;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+.list__cell {
+    width: calc(25% - 40px);
+    margin: 0 20px;
+    list-style-type: none;
+    min-height: 200px;
+    box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, .2);
+    background-color: bisque;
+    overflow: hidden;
+}
+.list__card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100%;
+    cursor: all-scroll;
+}
+.list__card-title {
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: chocolate;
+    color: #fff;
+}
+.list__card-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+.hovered {
+    background-color: #d1d8e2;
+}
