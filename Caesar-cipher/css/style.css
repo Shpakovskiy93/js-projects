@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.cipher {
+   background-color: rgb(105, 95, 95); 
+}
+.cipher__title {
+    font-size: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 50px;
+}
+.cipher__inner {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    background: transparent;
+    border: none;
+    padding: 15px 25px;
+    background-image: url(../img/aroows.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.cipher__text {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 24px;
+}
+.cipher__text::placeholder {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cipher__caesar {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 24px;
+}
+.cipher__caesar::placeholder {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
