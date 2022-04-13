@@ -12,7 +12,7 @@
 }
 
 .cipher {
-   background-color: rgb(105, 95, 95); 
+   background-color: rgb(233, 233, 233); 
 }
 .cipher__title {
     font-size: 42px;
@@ -34,7 +34,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    cursor: pointer;
     margin: 0 20px;
 }
 .cipher__text {
